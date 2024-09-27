@@ -1,0 +1,113 @@
+/* Fondo con degradado de azul a negro */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #1B3A57, #000000); /* Degradado de azul oscuro a negro */
+    font-family: 'Poppins', sans-serif; /* Cambiar a Poppins */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Centrar todo el contenido */
+    align-items: flex-start; /* Alinear desde el inicio */
+    color: #F0F8FF; /* Color claro para el texto */
+}
+
+/* Contenedor principal con espacio superior */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Mantener el contenido en el inicio */
+    padding: 60px 20px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+/* Estilo de la imagen destacada */
+.image {
+    width: 250px; /* Ajustar tamaño */
+    height: 250px; /* Mantener relación */
+    margin: 0 auto 30px; /* Centrar y agregar margen inferior */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo del título principal */
+.title {
+    margin-bottom: 40px;
+}
+
+.title h1 {
+    font-size: 3rem;
+    color: #A9D6E5; /* Azul claro */
+    font-family: 'Poppins', sans-serif; /* Asegurarte de que aquí también esté Poppins */
+}
+
+/* Contenedor del contenido */
+.content {
+    margin-bottom: 50px;
+}
+
+/* Botón estilizado */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056b3; /* Azul más oscuro */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #004085;
+}
+
+/* Contenedor de proyectos */
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar columnas */
+}
+
+/* Título de la sección de proyectos */
+#projects h2 {
+    font-size: 2rem;
+    margin: 40px 0; /* Aumentar el espacio arriba y abajo del título */
+    color: #A9D6E5; /* Azul claro */
+}
+
+/* Navegación de proyectos */
+#projects nav {
+    display: grid; /* Usar grid para dos columnas */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-items: center; /* Centrar las imágenes en sus celdas */
+    margin: 0 auto; /* Asegura que el contenido esté centrado */
+    max-width: 800px; /* Limitar el ancho máximo */
+}
+
+/* Estilo para las imágenes de proyectos */
+#projects nav a {
+    text-align: center; /* Alinear texto al centro */
+    text-decoration: none;
+    color: #F0F8FF; /* Blanco para enlaces */
+}
+
+/* Ajustar imágenes de proyectos */
+#projects nav img {
+    width: 300px; /* Tamaño de las imágenes */
+    height: 300px; /* Mantener proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease;
+}
+
+/* Título debajo de cada imagen */
+#projects nav span {
+    display: block; /* Hacer que el título esté en una nueva línea */
+    margin-top: 10px; /* Espacio entre la imagen y el título */
+}
+
+#projects nav img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
